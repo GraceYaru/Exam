@@ -1,0 +1,31 @@
+   21  mkdir git
+   22  cd git
+   23  git clone https://github.com/GraceYaru/exam.git
+   26  cp -r css index.html js js.js style.css ~/Desktop/git/exam/
+   27  cd ~/Desktop/git/exam/
+   29  git add .
+   30  git commit -m "added"
+   31  git push origin master
+   35  cd ~/Desktop/git/exam/
+   36  git branch v2.0
+   37  git checkout v2.0
+   38  git push origin v2.0
+   39  git checkout master
+   41  git add index.html
+   42  git commit -m "added index"
+   43  git push origin master
+   44  git checkout v2.0
+   45  git merge master
+   46  git push origin v2.0
+   47  git branch v3.0
+   48  git checkout v3.0
+   49  git push origin v3.0
+   50  git checkout master
+   52  git add index.html
+   53  git commit -m "added"
+   54  git push origin master
+   55  git chechout v3.0
+   56  git checkout v3.0
+   58  git merge master
+   60  git checkout master
+   63  history | grep git > history.txt
